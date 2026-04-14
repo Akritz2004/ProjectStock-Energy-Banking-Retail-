@@ -1,6 +1,8 @@
 # Stock Movement Prediction: A Comparative Study of Machine Learning Models
 โครงการพยากรณ์ทิศทางราคาหุ้นกลุ่ม SET50 ด้วย Machine Learning: การวิเคราะห์เชิงเปรียบเทียบตามกลุ่มอุตสาหกรรม
 
+หมายเหตุ: ข้อมูลราคาหุ้นที่แสดงในตารางสรุปผลอาจมีความแตกต่างเล็กน้อยจากผลลัพธ์ในการรันไฟล์ StockProject.ipynb เนื่องจากระบบใช้การดึงข้อมูลแบบ Real-time ผ่าน yfinance API ซึ่งมีการอัปเดตข้อมูลตามสภาวะตลาดปัจจุบัน ในขณะที่ผลสรุปในรายงานนี้อ้างอิงจากชุดข้อมูล ณ วันที่ทำการบันทึกผลการวิจัย
+
 ## 📌 Project Overview
 โปรเจกต์นี้มีวัตถุประสงค์เพื่อพยากรณ์ทิศทางราคาหุ้น (Up/Down) ในวันถัดไป โดยใช้ข้อมูลย้อนหลัง 5 ปี จากหุ้นตัวแทนใน 3 กลุ่มอุตสาหกรรมหลักของตลาดหุ้นไทย เพื่อศึกษาว่าปัจจัยทางเทคนิค (Technical Indicators) ชนิดใดมีผลต่อการเคลื่อนไหวของราคาหุ้นในแต่ละประเภทธุรกิจที่แตกต่างกัน
 
@@ -23,7 +25,7 @@ Evaluation: Time-Series Split (เพื่อป้องกัน Data Leakage
 | Stock | Winning Model | Accuracy | Primary Features (Top 3) |
 | :--- | :--- | :--- | :--- |
 | **PTT** | Random Forest / XGBoost | **62%** | MACD, Volatility, Rel. Volume |
-| **KBANK** | Random Forest | **56%** | Volatility, MACD, RSI |
+| **KBANK** | Random Forest | **55%** | Volatility, MACD, RSI |
 | **CPALL** | XGBoost | **54%** | RSI, SMA, Rel. Volume |
 
 ## 💡 Analyst Insight (สรุปบทวิเคราะห์)
