@@ -22,7 +22,7 @@ Evaluation: Time-Series Split (เพื่อป้องกัน Data Leakage
 
 | Stock | Winning Model | Accuracy | Primary Features (Top 3) |
 | :--- | :--- | :--- | :--- |
-| **PTT** | Random Forest / XGBoost | **61%** | MACD, Volatility, Rel. Volume |
+| **PTT** | Random Forest / XGBoost | **62%** | MACD, Volatility, Rel. Volume |
 | **KBANK** | Random Forest | **56%** | Volatility, MACD, RSI |
 | **CPALL** | XGBoost | **54%** | RSI, SMA, Rel. Volume |
 
